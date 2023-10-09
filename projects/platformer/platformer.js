@@ -43,22 +43,29 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
+   
+   
+   
     createPlatform(700, 620, 200, 40)
-    createPlatform(550, 490, 200, 40)
+    createPlatform(710, 0, 40, 230)
     createPlatform(900, 490, 40, 40)
     createPlatform(1250, 550, 40, 40)
     createPlatform(860,  650, 40, 105)
     createPlatform(1365, 425, 40, 40)
-    createPlatform(550, 490, 200, 40)
+    createPlatform(500, 370, 200, 40)
     createPlatform(1230, 320, 40, 40)
     createPlatform(870,  300, 70, 40)
     createPlatform(750,  190, 70, 40)
-    createPlatform(0, 620, 200, 40)
-    createPlatform(120, 220, 100, 40)
+    createPlatform(0, 620, 700, 40)
+    createPlatform(120, 220, 130, 40)
     createPlatform(100, 60, 40, 200)
-    createPlatform(1325, 220, 100, 40)
+    createPlatform(1325, 200, 100, 40)
+    createPlatform(670, 220, 80, 40)
+    createPlatform(500, 310, 60, 60)
+    createPlatform(210, 100, 40, 160)
+    createPlatform(250, 100, 300, 40)
 
-    
+
 
     // TODO 2
     // Create collectables
@@ -67,9 +74,17 @@ $(function () {
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
     createCollectable('coin', 765, 120, 0.1,1)
-    createCollectable('coin', 160, 150, 0.1,1)
-    createCollectable('coin', 1345, 150, 0.1,1)
-
+    createCollectable('coin', 1335, 130, 0.1,1)
+    createCollectable('coin', 155, 150, 0.1,1)
+    createCollectable('coin', 60, 330, 0,0)
+    createCollectable('coin', 60, 280, 0,0)
+    createCollectable('coin', 60, 380, 0,0)
+    createCollectable('coin', 60, 430, 0,0)
+    createCollectable('coin', 60, 180, 0,0)
+    createCollectable('coin', 60, 230, 0,0)
+    createCollectable('coin', 60, 480, 0,0)
+    createCollectable('coin', 60, 520, 0,0)
+    createCollectable('coin', 60, 570, 0,0)
 
     // TODO 3
     // Create cannons
@@ -77,8 +92,9 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
-
+    createCannon('right', 700, 4, 150, 10)
+    createCannon('bottom', 240, 800, 30, 30)
+    createCannon('bottom', 390, 800, 30, 30)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
