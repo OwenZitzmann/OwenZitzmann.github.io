@@ -76,15 +76,7 @@ $(function () {
     createCollectable('coin', 765, 120, 0.1,1)
     createCollectable('coin', 1335, 130, 0.1,1)
     createCollectable('coin', 155, 150, 0.1,1)
-    createCollectable('coin', 60, 330, 0,0)
-    createCollectable('coin', 60, 280, 0,0)
-    createCollectable('coin', 60, 380, 0,0)
-    createCollectable('coin', 60, 430, 0,0)
-    createCollectable('coin', 60, 180, 0,0)
-    createCollectable('coin', 60, 230, 0,0)
-    createCollectable('coin', 60, 480, 0,0)
-    createCollectable('coin', 60, 520, 0,0)
-    createCollectable('coin', 60, 570, 0,0)
+
 
     // TODO 3
     // Create cannons
