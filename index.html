@@ -4,10 +4,25 @@
         <title>Owen's First Website</title>
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
         <!-- All content goes here -->
         <div id="all-contents">
+            <script>
+                function passwordTest(){
+                var response = prompt("Password = Lions")
+
+                if(response === "Lions"){
+                alert("welcome")
+                }
+
+                else if(response !== "1234"){
+                alert("try again!")
+                passwordTest()
+                }
+                }
+
+                passwordTest()
+            </script>
             <nav>
                 <h1>Owen's First Website</h1>
                 <ul id="nav-ul">
