@@ -44,6 +44,7 @@ var init = function (window) {
         for(var i = 0; i <= 100; i++){
             drawCircle()
             physikz.addRandomVelocity(circle, canvas, 10, 10);
+            physikz.updatePosition(circles[i])
         }
 
         ////////////////////////////////////////////////////////////
@@ -66,14 +67,11 @@ var init = function (window) {
             for(var i = 0; i <=100; i++){
                 physikz.updatePosition(circles[i])
                 physikz.addRandomVelocity
+                game.checkCirclePosition(circles[i]);
             }
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition(circles[0]);
-            game.checkCirclePosition(circles[1]);
-            game.checkCirclePosition(circles[2]);
-            game.checkCirclePosition(circles[3]);
-            game.checkCirclePosition(circles[4]);
+           
             // TODO 9 : Iterate over the array
            
             
@@ -87,11 +85,17 @@ var init = function (window) {
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            if ( circle.x > canvas.width ) {
+            if ( circle.x - circle.radius > canvas.width ) {
                 circle.x = 0;    
             }
-            if ( circle.y > canvas.height ) {
-                circle.y = 0;    
+            if ( circle.x + circle.radius < 0 ) {
+                circle.x = canvas.width;    
+            }
+            if ( circle.y - circle.radius > canvas.height) {
+                circle.y = 0;
+            }
+            if ( circle.y + circle.radius < 0 ) {
+                circle.y = canvas.height;
             }
 
             
